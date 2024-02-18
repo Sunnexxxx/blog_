@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination .current {
+    font-weight: bold;
+}
+
+/* post/index.html */
+.post-list {
+    margin-bottom: 20px;
+}
+
+.post-list li {
+    margin-bottom: 10px;
+}
+
+.category-list {
+    margin-bottom: 20px;
+}
+
+.category-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.category-list li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.category-list li a:hover {
+    background-color: #ccc;
+}
+
+/* post/detail.html */
+.post-detail {
+    margin-bottom: 20px;
+}
+
+.post-detail h1 {
+    margin-bottom: 10px;
+}
+
+.post-detail p {
+    line-height: 1.6;
+}
+/* post/create.html */
+.post-form {
+    margin-bottom: 20px;
+}
+
+.post-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.post-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-form button:hover {
+    background-color: #0056b3;
+}

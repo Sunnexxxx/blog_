@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<header>
+    <ul style="display: flex; justify-content: space-between; list-style: none">
+        {% if request.user.is_authenticated %}
+            <li><a href="{% url 'post_create_by_class' %}">Добавить пост</a></li>
+        {% else %}
+            <li><a href="{% url 'register' %}">Регистрация</a></li>
+            <li><a href="{% url 'login' %}">Авторизация</a></li>
+        {% endif %}
+    </ul>
+
+</header>
+{% block content %} {% endblock %}
+
+</body>
+</html>

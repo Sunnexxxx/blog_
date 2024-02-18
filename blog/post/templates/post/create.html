@@ -1,0 +1,15 @@
+{% extends 'post/base.html' %}
+
+{% block content %}
+    {% if request.user.is_authenticated %}
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button>save</button>
+        </form>
+    {% else %}
+        <h1 style="color: red">Авторизуйся</h1>
+        <div><a href="{% url 'login' %}">login</a></div>
+        <div><a href="{% url 'register' %}">register</a></div>
+    {% endif %}
+{% endblock %}
